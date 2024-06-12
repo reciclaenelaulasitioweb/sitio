@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/* Tipografía */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap");
+
+/* Resetear estilos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", Arial, sans-serif;
+    background-color: #E8E8E8; /* Color de fondo del cuerpo */
+    color: #010101; /* Color de texto del cuerpo */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: transparent; /* Cambiar a transparente para eliminar el fondo negro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; /* Para asegurar que esté encima de otros elementos */
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #F89A0C;
+    position: sticky;
+    top: 0;
+    z-index: 998; /* Para asegurar que esté encima del contenido */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem 0; /* Espaciado interno */
+}
+
+section {
+    padding: 4rem 0; /* Espaciado interno */
+}
+
+h2 {
+    text-align: center; /* Alineación al centro */
+    margin-bottom: 2rem; /* Espaciado inferior */
+    font-size: 2rem; /* Tamaño de letra en rem */
+    color: #F89A0C; /* Color de los títulos */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio {
+    margin-bottom: 2rem; /* Espaciado inferior */
+    text-align: center; /* Alinear al centro */
+}
+
+.tarjeta-servicio {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.imagen-container {
+    position: relative;
+}
+
+.imagen-container img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.contenido-servicio {
+    padding: 20px;
+}
+
+.contenido-servicio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contenido-servicio p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn-compra {
+    position: sticky;
+    bottom: 10px; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Coloca el botón en el centro horizontalmente */
+    transform: translateX(-50%);
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 999; /* Para asegurar que esté encima de otros elementos */
+}
+
+.btn-compra:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos adicionales para el botón de "Agregar al carrito" */
+.btn-compra {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-top: 10px; /* Espaciado superior */
+    border: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.btn-compra:hover {
+    background-color: transparent;
+    color: #007bff;
+    border-color: #007bff;
+}
+
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+    padding: 1rem 0; /* Espaciado interno */
+    text-align: center; /* Alineación al centro */
+}
+
+footer p {
+    margin: 0; /* Eliminar el margen inferior */
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .servicio {
+        margin-bottom: 4rem; /* Espaciado inferior */
+    }
+    
+    .btn-compra {
+        position: static; /* Cambia la posición a estática para evitar superposiciones en dispositivos pequeños */
+        width: 100%; /* Ajusta el ancho del botón para que ocupe todo el contenedor */
+        margin-top: 20px; /* Aumenta el margen superior */
+    }
+
+    .contenido-servicio {
+        padding: 20px 10px; /* Reduce el espacio alrededor del texto */
+    }
+}
+
+
+
+
+
+
+
+
+
+

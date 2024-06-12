@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* Estilos generales */
+body {
+    font-family: "Lato", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #F89A0C;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 100%; /* Ajustar el tamaño del logo según sea necesario */
+    max-width: 150px; /* Establecer un ancho máximo para el logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.testimonios {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonio {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px; /* Agregado para espacio entre testimonios */
+}
+
+.testimonio img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.testimonio p {
+    font-size: 16px;
+}
+
+.testimonio cite {
+    font-style: normal;
+    font-size: 14px;
+    color: #777;
+}
+
+footer {
+    background-color: #F89A0C;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    .container {
+        width: 100%; /* Ajustar el ancho del contenedor para dispositivos móviles */
+    }
+
+    .logo img {
+        width: 100px; /* Tamaño del logo para dispositivos móviles */
+        max-width: 100%; /* Ajustar el ancho máximo del logo al 100% */
+    }
+
+    nav ul {
+        display: block; /* Mostrar el menú de navegación en dispositivos móviles */
+        text-align: center; /* Centrar los elementos del menú */
+    }
+
+    nav ul li {
+        display: block; /* Cambiar el estilo de visualización a bloque */
+        margin: 0 auto; /* Centrar los elementos */
+        margin-bottom: 10px; /* Agregar margen inferior para separación */
+    }
+
+    /* Ocultar el botón de menú desplegable */
+    .menu-toggle {
+        display: none;
+    }
+
+    .testimonio {
+        width: 100%; /* Ancho completo para testimonios en dispositivos móviles */
+    }
+
+    .testimonio img {
+        width: 80px; /* Tamaño de imagen más pequeño para dispositivos móviles */
+        height: 80px;
+    }
+}
+
+

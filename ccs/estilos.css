@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* Tipografía */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap");
+
+/* Resetear estilos */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", Arial, sans-serif;
+  background-color: #E8E8E8; /* Color de fondo del cuerpo */
+  color: #010101; /* Color de texto del cuerpo */
+  text-align: center; /* Alineación al centro */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #E8E8E8; /* Color de fondo del encabezado */
+  color: #fff; /* Color de texto del encabezado */
+  padding: 20px 0; /* Espaciado interno */
+}
+
+#logo img {
+  width: 150px; /* Tamaño del logo en píxeles */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 20px; /* Espaciado superior */
+  display: flex; /* Convertir la lista en un contenedor flex */
+  justify-content: center; /* Alinear los elementos horizontalmente */
+}
+
+nav ul li {
+  margin: 0 20px; /* Espaciado entre botones */
+}
+
+nav ul li a {
+  display: inline-block; /* Convertir en línea para que los estilos de ancho y alto funcionen */
+  padding: 10px 20px; /* Tamaño del botón en píxeles */
+  background-color: #F89A0C; /* Color de fondo de los botones */
+  color: #fff; /* Color de texto de los botones */
+  border-radius: 5px; /* Borde redondeado para los botones */
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+nav ul li a:hover {
+  background-color: #FFC107; /* Cambiar el color de fondo al pasar el cursor */
+}
+
+main {
+  padding: 20px 0; /* Espaciado interno */
+}
+
+section {
+  padding: 40px 0; /* Espaciado interno */
+}
+
+h1, h2, h3 {
+  text-align: center; /* Alineación al centro */
+  margin-bottom: 40px; /* Espaciado inferior */
+  font-size: 36px; /* Tamaño de letra en píxeles */
+  color: #F89A0C; /* Color de los títulos */
+}
+
+section img {
+  width: 400px; /* Tamaño de la imagen en píxeles */
+  margin: 20px auto; /* Centrar la imagen */
+  display: block; /* Convertir en bloque */
+}
+
+aside {
+  background-color: #E8E8E8; /* Color de fondo del aside */
+  color: #fff; /* Color del texto del aside */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Alineación al centro */
+}
+
+footer {
+  background-color: #333; /* Color de fondo del pie de página */
+  color: #fff; /* Color de texto del pie de página */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Alineación al centro */
+}
+
+footer p {
+  margin: 0; /* Eliminar el margen inferior */
+}
+
+/* Nuevos estilos para redes sociales */
+.redes-sociales {
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.redes-sociales a {
+  margin: 0 10px; /* Espaciado entre íconos */
+  font-size: 24px; /* Tamaño de los íconos en píxeles */
+  color: #F89A0C; /* Color de los íconos */
+}
+
+.redes-sociales a:hover {
+  color: #FFC107; /* Cambiar el color al pasar el cursor */
+}
+
+/* Estilos para la sección de preguntas frecuentes */
+.preguntas-frecuentes {
+  margin-top: 80px; /* Espaciado superior */
+}
+
+.pregunta {
+  margin-bottom: 40px; /* Espaciado inferior */
+}
+
+.pregunta h3 {
+  color: #F89A0C; /* Color del título de la pregunta */
+}
+
+.respuesta {
+  font-size: 20px; /* Tamaño de la respuesta en píxeles */
+}
+
+

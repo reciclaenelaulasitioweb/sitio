@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mi Primer Sitio Web</title>
+    <link rel="stylesheet" href="ccs/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E8E8E8;
+        }
+        header {
+            background-color: #E8E8E8;
+            color: #E8E8E8;
+            padding: 20px;
+            text-align: center;
+        }
+        #logo img {
+            width: 100%;
+            max-width: 150px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+        aside {
+            background-color: #E8E8E8;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p, footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Query para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            aside {
+                width: 90%; /* Ajustar el ancho al 90% del contenedor */
+                margin: 0 auto; /* Centrar en dispositivos móviles */
+            }
+            aside div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            aside div a {
+                margin: 5px; /* Ajustar el margen entre los enlaces */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagenes/logonuevo.png" alt="Logo de Recicla en el Aula">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienesomos.html">Quienes somos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="registrate.html">Registrate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 style="font-size: 2rem; margin-bottom: 1rem;">¡BIENVENIDOS!</h1>
+            <p style="font-size: 1.2rem;">Nuestros talleres están llenos de juegos, experimentos y actividades prácticas que hacen que aprender sea emocionante.</p>
+            <img src="imagenes/manosarriba.jpg.jpg" alt="Descripción de tu imagen">
+        </section>
+    </main>
+    <aside>
+        <h2 style="font-size: 2rem;">¡Contáctenos!</h2>
+        <form action="#" method="post" style="margin-bottom: 2rem;">
+            <input type="text" name="nombre" placeholder="Nombre" style="width: 100%; padding: 10px; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;" required><br>
+            <input type="email" name="email" placeholder="Email" style="width: 100%; padding: 10px; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;" required><br>
+            <textarea name="mensaje" placeholder="Mensaje" style="width: 100%; padding: 10px; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; height: 150px;" required></textarea><br>
+            <button type="submit" style="padding: 12px 24px; background-color: #F89A0C; color: #fff; border: none; border-radius: 5px; text-decoration: none; cursor: pointer; transition: background-color 0.3s ease;">Enviar</button>
+        </form>
+    </aside>
+    
+    <aside>
+        <h2 style="font-size: 2rem;">¡Síguenos en redes sociales!</h2>
+        <div>
+            <a href="#" style="color: #fff; text-decoration: none; background-color: #F89A0C; padding: 10px 20px; border-radius: 5px; margin-right: 10px;">Facebook</a>
+            <a href="#" style="color: #fff; text-decoration: none; background-color: #F89A0C; padding: 10px 20px; border-radius: 5px; margin-right: 10px;">Twitter</a>
+            <a href="#" style="color: #fff; text-decoration: none; background-color: #F89A0C; padding: 10px 20px; border-radius: 5px;">Instagram</a>
+        </div>
+    </aside>
+    
+    <section>
+        <h2 style="font-size: 2rem; margin-bottom: 1rem;">Preguntas frecuentes</h2>
+        <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">¿Cómo me registro para un taller?</h3>
+            <p>Para registrarte en nuestros talleres, visita la página de registro y sigue las instrucciones proporcionadas.</p>
+        </div>
+        <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">¿Cuáles son los métodos de pago aceptados?</h3>
+            <p>Aceptamos pagos en efectivo, transferencia bancaria y tarjetas de crédito/débito. Todos los detalles de pago se proporcionarán durante el proceso de registro.</p>
+        </div>
+        
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

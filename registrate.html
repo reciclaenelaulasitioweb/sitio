@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Registro</title>
+    <link rel="stylesheet" href="ccs/estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- FontAwesome -->
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #E8E8E8;
+            color: #fff; /* Añadido para que el texto sea visible */
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            background-color: transparent; /* Cambiado a transparente */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: block; /* Cambiado a bloque para hacerlo vertical */
+            margin-bottom: 10px; /* Espaciado entre elementos */
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para el formulario */
+        .formulario-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .registro-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .btn-registrarse {
+            background-color: #F89A0C;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-registrarse:hover {
+            background-color: #D87C0C;
+        }
+
+        /* Estilos para los iconos de redes sociales */
+        .redes-sociales {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .redes-sociales a {
+            color: #F89A0C;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .redes-sociales a:hover {
+            color: #D87C0C;
+        }
+
+        /* Media Query para dispositivos móviles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-right: 0; /* Eliminar el margen derecho */
+                margin-bottom: 10px; /* Espaciado entre elementos */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imagenes/logonuevo.png" alt="Logo de Recicla en el Aula">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienesomos.html">Quiénes somos</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="testimonios.html">Testimonios</a></li>
+                <li><a href="registrate.html" class="btn-registrarse">Regístrate</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section id="registro" class="registro">
+            <div class="container">
+                <div class="content">
+                    <div class="formulario-container">
+                        <h2 class="registro-title">Regístrate</h2>
+                        <form action="enviar.php" method="post">
+                            <div class="form-group">
+                                <input type="text" name="nombre" placeholder="Nombre" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="apellido" placeholder="Apellido" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email" required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="contrasena" placeholder="Contraseña" required="">
+                            </div>
+                            <button type="submit" class="btn-registrarse">Registrarse</button>
+                        </form>
+                    </div>
+                    <div class="redes-sociales">
+                        <a href="https://www.facebook.com/tupagina" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/tupagina" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/tupagina" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Recicla en el aula. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+

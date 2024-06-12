@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* Tipografía */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap");
+
+/* Resetear estilos */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", Arial, sans-serif;
+    background-color: #f5f5f5; /* Cambié el color de fondo del cuerpo */
+    color: #333; /* Cambié el color de texto del cuerpo */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #fff; /* Cambié el color de fondo del encabezado */
+    color: #333; /* Cambié el color de texto del encabezado */
+    padding: 20px 0; /* Espaciado interno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añadí una sombra al encabezado */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 2rem; /* Espaciado superior */
+    display: flex; /* Convertir la lista en un contenedor flex */
+    justify-content: center; /* Alinear los elementos horizontalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en dispositivos más pequeños */
+}
+
+nav ul li {
+    margin: 0 10px; /* Espaciado entre botones */
+}
+
+nav ul li a {
+    display: inline-block; /* Convertir en línea para que los estilos de ancho y alto funcionen */
+    padding: 8px 16px; /* Reducir el tamaño del botón */
+    background-color: #F89A0C; /* Color de fondo de los botones */
+    color: #fff; /* Color de texto de los botones */
+    border-radius: 5px; /* Borde redondeado para los botones */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+}
+
+nav ul li a:hover {
+    background-color: #FFC107; /* Cambiar el color de fondo al pasar el cursor */
+}
+
+main {
+    padding: 2rem 0; /* Espaciado interno */
+}
+
+section {
+    padding: 4rem 0; /* Espaciado interno */
+    background-color: #fff; /* Cambié el color de fondo de la sección */
+}
+
+h1, h2, h3 {
+    text-align: center; /* Alineación al centro */
+    margin-bottom: 2rem; /* Espaciado inferior */
+    font-size: 2rem; /* Tamaño de letra en rem */
+    color: #F89A0C; /* Color de los títulos */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+    padding: 1rem 0; /* Espaciado interno */
+    text-align: center; /* Alineación al centro */
+}
